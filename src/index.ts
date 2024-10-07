@@ -1,5 +1,3 @@
-import moduleA from "@modules/module-a";
-import moduleB from "@modules/module-b";
+import { Home } from "@pages/home";
 
-console.log(moduleA("imported from root"));
-console.log(moduleB("imported from root"));
+Home();

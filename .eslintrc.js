@@ -24,8 +24,12 @@ module.exports = {
         pattern: "components/*",
       },
       {
-        type: "modules",
-        pattern: "modules/*",
+        type: "pages",
+        pattern: "pages/*",
+      },
+      {
+        type: "features",
+        pattern: "features/*",
       },
     ],
     "boundaries/include": ["src/**/*.*"],
@@ -52,15 +56,19 @@ module.exports = {
         rules: [
           {
             from: "root",
-            allow: ["modules"],
+            allow: ["pages"],
           },
           {
             from: "components",
-            allow: ["components"],
+            allow: [],
           },
           {
-            from: "modules",
-            allow: ["components"],
+            from: "features",
+            allow: [],
+          },
+          {
+            from: "pages",
+            allow: ["features", "components"],
           },
         ],
       },

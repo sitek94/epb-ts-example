@@ -5,8 +5,9 @@
       "outDir": "dist",
       "baseUrl": "./src",
       "paths": {
-        "@modules/*": ["modules/*"],
-        "@components/*": ["components/*"]
+        "@components/*": ["components/*"],
+        "@features/*": ["features/*"],
+        "@pages/*": ["pages/*"]
       },
       "plugins": [
         // Transform paths in output .js files
